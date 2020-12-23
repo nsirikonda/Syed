@@ -1,0 +1,1183 @@
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-34-134 ~]$ bash
+[ec2-user@ip-172-31-34-134 ~]$ sudo su -
+[root@ip-172-31-34-134 ~]# bash
+[root@ip-172-31-34-134 ~]# yum update -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+No packages marked for update
+[root@ip-172-31-34-134 ~]# yum update* -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+No such command: update*. Please use /usr/bin/yum --help
+[root@ip-172-31-34-134 ~]# yum update
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+No packages marked for update
+[root@ip-172-31-34-134 ~]# clear
+[root@ip-172-31-34-134 ~]# git version
+bash: git: command not found
+[root@ip-172-31-34-134 ~]# git -version
+bash: git: command not found
+[root@ip-172-31-34-134 ~]# yum update -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                                                      | 3.7 kB  00:00:00
+No packages marked for update
+[root@ip-172-31-34-134 ~]# yum install git* -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package git.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl-Git = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: emacs-filesystem >= 25.3 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Term::ReadKey) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Git::I18N) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Git) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: libsecret-1.so.0()(64bit) for package: git-2.23.3-1.amzn2.0.1.x86_64
+---> Package git-all.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-clang-format.x86_64 0:7.0.1-1.amzn2.0.2 will be installed
+--> Processing Dependency: clang(x86-64) = 7.0.1-1.amzn2.0.2 for package: git-clang-format-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: /usr/bin/python3 for package: git-clang-format-7.0.1-1.amzn2.0.2.x86_64
+---> Package git-core.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-core-doc.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-cvs.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl(Data::Dumper) for package: git-cvs-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(DBI) for package: git-cvs-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(DBD::SQLite) for package: git-cvs-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: cvsps for package: git-cvs-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: cvs for package: git-cvs-2.23.3-1.amzn2.0.1.noarch
+---> Package git-daemon.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-email.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl(Net::SMTP::SSL) for package: git-email-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Mail::Address) for package: git-email-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Error) for package: git-email-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Authen::SASL) for package: git-email-2.23.3-1.amzn2.0.1.noarch
+---> Package git-gnome-keyring.x86_64 0:2.14.5-1.amzn2 will be installed
+--> Processing Dependency: git = 2.14.5-1.amzn2 for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+--> Processing Dependency: gnome-keyring for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+--> Processing Dependency: libgnome-keyring.so.0()(64bit) for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+---> Package git-gui.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: tk >= 8.4 for package: git-gui-2.23.3-1.amzn2.0.1.noarch
+---> Package git-instaweb.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-p4.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-subtree.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-svn.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: subversion for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN::Utils) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN::Ra) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN::Prompt) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN::Migration) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN::Log) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN::Fetcher) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN::Editor) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Git::SVN) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(Digest::MD5) for package: git-svn-2.23.3-1.amzn2.0.1.noarch
+---> Package gitk.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package gitweb.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl(CGI::Util) for package: gitweb-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(CGI::Carp) for package: gitweb-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(CGI) for package: gitweb-2.23.3-1.amzn2.0.1.noarch
+--> Running transaction check
+---> Package clang.x86_64 0:7.0.1-1.amzn2.0.2 will be installed
+--> Processing Dependency: clang-libs(x86-64) = 7.0.1-1.amzn2.0.2 for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libstdc++-devel for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclang.so.7(LLVM_7)(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libLLVM-7.so(LLVM_7)(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: gcc-c++ for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangToolingCore.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangTooling.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangStaticAnalyzerFrontend.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangSerialization.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangRewriteFrontend.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangRewrite.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangParse.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangLex.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangIndex.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangFrontendTool.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangFrontend.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangFormat.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangDriver.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangCrossTU.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangCodeGen.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangBasic.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclangAST.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libclang.so.7()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+--> Processing Dependency: libLLVM-7.so()(64bit) for package: clang-7.0.1-1.amzn2.0.2.x86_64
+---> Package cvs.x86_64 0:1.11.23-35.amzn2.0.2 will be installed
+---> Package cvsps.x86_64 0:2.2-0.14.b1.amzn2.0.2 will be installed
+---> Package emacs-filesystem.noarch 1:25.3-3.amzn2.0.2 will be installed
+---> Package git-gnome-keyring.x86_64 0:2.14.5-1.amzn2 will be installed
+--> Processing Dependency: git = 2.14.5-1.amzn2 for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+---> Package gnome-keyring.x86_64 0:3.28.2-1.amzn2 will be installed
+amzn2-core/2/x86_64/filelists_db                                                |  37 MB  00:00:00
+amzn2extra-docker/2/x86_64/filelists_db                                         |  15 kB  00:00:00
+--> Processing Dependency: /usr/libexec/gcr-ssh-askpass for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libpangocairo-1.0.so.0()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libpango-1.0.so.0()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libgtk-3.so.0()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libgdk_pixbuf-2.0.so.0()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libgdk-3.so.0()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libgcr-ui-3.so.1()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libgcr-base-3.so.1()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libgck-1.so.0()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libcairo.so.2()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libcairo-gobject.so.2()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+--> Processing Dependency: libatk-1.0.so.0()(64bit) for package: gnome-keyring-3.28.2-1.amzn2.x86_64
+---> Package libgnome-keyring.x86_64 0:3.12.0-1.amzn2.0.2 will be installed
+---> Package libsecret.x86_64 0:0.18.5-2.amzn2.0.2 will be installed
+---> Package perl-Authen-SASL.noarch 0:2.15-10.amzn2 will be installed
+--> Processing Dependency: perl(GSSAPI) for package: perl-Authen-SASL-2.15-10.amzn2.noarch
+--> Processing Dependency: perl(Digest::HMAC_MD5) for package: perl-Authen-SASL-2.15-10.amzn2.noarch
+---> Package perl-CGI.noarch 0:3.63-4.amzn2 will be installed
+--> Processing Dependency: perl(FCGI) >= 0.67 for package: perl-CGI-3.63-4.amzn2.noarch
+---> Package perl-DBD-SQLite.x86_64 0:1.39-3.amzn2.0.2 will be installed
+---> Package perl-DBI.x86_64 0:1.627-4.amzn2.0.2 will be installed
+--> Processing Dependency: perl(RPC::PlServer) >= 0.2001 for package: perl-DBI-1.627-4.amzn2.0.2.x86_64
+--> Processing Dependency: perl(RPC::PlClient) >= 0.2000 for package: perl-DBI-1.627-4.amzn2.0.2.x86_64
+---> Package perl-Data-Dumper.x86_64 0:2.145-3.amzn2.0.2 will be installed
+---> Package perl-Digest-MD5.x86_64 0:2.52-3.amzn2.0.2 will be installed
+--> Processing Dependency: perl(Digest::base) >= 1.00 for package: perl-Digest-MD5-2.52-3.amzn2.0.2.x86_64
+---> Package perl-Error.noarch 1:0.17020-2.amzn2 will be installed
+---> Package perl-Git.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package perl-Git-SVN.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl(YAML::Any) for package: perl-Git-SVN-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(SVN::Ra) for package: perl-Git-SVN-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(SVN::Delta) for package: perl-Git-SVN-2.23.3-1.amzn2.0.1.noarch
+--> Processing Dependency: perl(SVN::Core) for package: perl-Git-SVN-2.23.3-1.amzn2.0.1.noarch
+---> Package perl-MailTools.noarch 0:2.12-2.amzn2 will be installed
+--> Processing Dependency: perl(Date::Parse) for package: perl-MailTools-2.12-2.amzn2.noarch
+--> Processing Dependency: perl(Date::Format) for package: perl-MailTools-2.12-2.amzn2.noarch
+---> Package perl-Net-SMTP-SSL.noarch 0:1.01-13.amzn2 will be installed
+--> Processing Dependency: perl(IO::Socket::SSL) for package: perl-Net-SMTP-SSL-1.01-13.amzn2.noarch
+---> Package perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2 will be installed
+---> Package python3.x86_64 0:3.7.9-1.amzn2.0.1 will be installed
+--> Processing Dependency: python3-libs(x86-64) = 3.7.9-1.amzn2.0.1 for package: python3-3.7.9-1.amzn2.0.1.x86_64
+--> Processing Dependency: python3-setuptools for package: python3-3.7.9-1.amzn2.0.1.x86_64
+--> Processing Dependency: python3-pip for package: python3-3.7.9-1.amzn2.0.1.x86_64
+--> Processing Dependency: libpython3.7m.so.1.0()(64bit) for package: python3-3.7.9-1.amzn2.0.1.x86_64
+---> Package subversion.x86_64 0:1.7.14-16.amzn2.0.1 will be installed
+--> Processing Dependency: subversion-libs(x86-64) = 1.7.14-16.amzn2.0.1 for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_wc-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_subr-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_repos-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_ra_svn-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_ra_neon-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_ra_local-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_ra-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_fs_util-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_fs_fs-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_fs_base-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_fs-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_diff-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_delta-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libsvn_client-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libneon.so.27()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: subversion-1.7.14-16.amzn2.0.1.x86_64
+---> Package tk.x86_64 1:8.5.13-6.amzn2.0.2 will be installed
+--> Processing Dependency: tcl = 1:8.5.13 for package: 1:tk-8.5.13-6.amzn2.0.2.x86_64
+--> Processing Dependency: tcl >= 1:8.5.13-5 for package: 1:tk-8.5.13-6.amzn2.0.2.x86_64
+--> Processing Dependency: libtcl8.5.so()(64bit) for package: 1:tk-8.5.13-6.amzn2.0.2.x86_64
+--> Processing Dependency: libXft.so.2()(64bit) for package: 1:tk-8.5.13-6.amzn2.0.2.x86_64
+--> Processing Dependency: libX11.so.6()(64bit) for package: 1:tk-8.5.13-6.amzn2.0.2.x86_64
+--> Running transaction check
+---> Package apr.x86_64 0:1.6.3-5.amzn2.0.2 will be installed
+---> Package apr-util.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Processing Dependency: apr-util-bdb(x86-64) = 1.6.1-5.amzn2.0.2 for package: apr-util-1.6.1-5.amzn2.0.2.x86_64
+---> Package atk.x86_64 0:2.22.0-3.amzn2.0.2 will be installed
+---> Package cairo.x86_64 0:1.15.12-4.amzn2 will be installed
+--> Processing Dependency: libxcb.so.1()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libxcb-shm.so.0()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libxcb-render.so.0()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libpixman-1.so.0()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libfontconfig.so.1()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libXrender.so.1()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libXext.so.6()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libGL.so.1()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+--> Processing Dependency: libEGL.so.1()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+---> Package cairo-gobject.x86_64 0:1.15.12-4.amzn2 will be installed
+---> Package clang-libs.x86_64 0:7.0.1-1.amzn2.0.2 will be installed
+--> Processing Dependency: libatomic.so.1()(64bit) for package: clang-libs-7.0.1-1.amzn2.0.2.x86_64
+---> Package gcc-c++.x86_64 0:7.3.1-12.amzn2 will be installed
+--> Processing Dependency: gcc(x86-64) = 7.3.1-12.amzn2 for package: gcc-c++-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-c++-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-c++-7.3.1-12.amzn2.x86_64
+---> Package gcr.x86_64 0:3.28.0-1.amzn2 will be installed
+---> Package gdk-pixbuf2.x86_64 0:2.36.12-3.amzn2 will be installed
+--> Processing Dependency: libjasper.so.1()(64bit) for package: gdk-pixbuf2-2.36.12-3.amzn2.x86_64
+---> Package git-gnome-keyring.x86_64 0:2.14.5-1.amzn2 will be installed
+--> Processing Dependency: git = 2.14.5-1.amzn2 for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+---> Package gtk3.x86_64 0:3.22.30-3.amzn2 will be installed
+--> Processing Dependency: libwayland-cursor(x86-64) >= 1.9.91 for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libwayland-client(x86-64) >= 1.9.91 for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libepoxy(x86-64) >= 1.0 for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXrandr(x86-64) >= 1.5.0 for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libxkbcommon.so.0(V_0.5.0)(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: hicolor-icon-theme for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: gtk-update-icon-cache for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: dconf(x86-64) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: adwaita-icon-theme for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libxkbcommon.so.0()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libwayland-egl.so.1()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libwayland-cursor.so.0()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libwayland-client.so.0()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: librest-0.7.so.0()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libjson-glib-1.0.so.0()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libepoxy.so.0()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libcups.so.2()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libcolord.so.2()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libatk-bridge-2.0.so.0()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXrandr.so.2()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXinerama.so.1()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXi.so.6()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXfixes.so.3()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXdamage.so.1()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXcursor.so.1()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+--> Processing Dependency: libXcomposite.so.1()(64bit) for package: gtk3-3.22.30-3.amzn2.x86_64
+---> Package libX11.x86_64 0:1.6.7-3.amzn2 will be installed
+--> Processing Dependency: libX11-common >= 1.6.7-3.amzn2 for package: libX11-1.6.7-3.amzn2.x86_64
+---> Package libXft.x86_64 0:2.3.2-2.amzn2.0.2 will be installed
+---> Package llvm-libs.x86_64 0:7.0.1-1.amzn2.0.1 will be installed
+---> Package neon.x86_64 0:0.30.0-3.amzn2.0.2 will be installed
+--> Processing Dependency: libgnutls.so.28(GNUTLS_2_12)(64bit) for package: neon-0.30.0-3.amzn2.0.2.x86_64
+--> Processing Dependency: libgnutls.so.28(GNUTLS_1_4)(64bit) for package: neon-0.30.0-3.amzn2.0.2.x86_64
+--> Processing Dependency: libproxy.so.1()(64bit) for package: neon-0.30.0-3.amzn2.0.2.x86_64
+--> Processing Dependency: libpakchois.so.0()(64bit) for package: neon-0.30.0-3.amzn2.0.2.x86_64
+--> Processing Dependency: libgnutls.so.28()(64bit) for package: neon-0.30.0-3.amzn2.0.2.x86_64
+---> Package pango.x86_64 0:1.42.4-4.amzn2 will be installed
+--> Processing Dependency: libthai(x86-64) >= 0.1.9 for package: pango-1.42.4-4.amzn2.x86_64
+--> Processing Dependency: harfbuzz(x86-64) >= 1.4.2 for package: pango-1.42.4-4.amzn2.x86_64
+--> Processing Dependency: fribidi(x86-64) >= 1.0 for package: pango-1.42.4-4.amzn2.x86_64
+--> Processing Dependency: libthai.so.0(LIBTHAI_0.1)(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+--> Processing Dependency: libthai.so.0()(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+--> Processing Dependency: libharfbuzz.so.0()(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+--> Processing Dependency: libfribidi.so.0()(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+---> Package perl-Digest.noarch 0:1.17-245.amzn2 will be installed
+---> Package perl-Digest-HMAC.noarch 0:1.03-5.amzn2 will be installed
+--> Processing Dependency: perl(Digest::SHA) for package: perl-Digest-HMAC-1.03-5.amzn2.noarch
+---> Package perl-FCGI.x86_64 1:0.74-8.amzn2.0.2 will be installed
+---> Package perl-GSSAPI.x86_64 0:0.28-9.amzn2.0.2 will be installed
+---> Package perl-IO-Socket-SSL.noarch 0:1.94-7.amzn2.0.1 will be installed
+--> Processing Dependency: perl-Net-SSLeay >= 1.55-5 for package: perl-IO-Socket-SSL-1.94-7.amzn2.0.1.noarch
+--> Processing Dependency: perl(Net::SSLeay) >= 1.21 for package: perl-IO-Socket-SSL-1.94-7.amzn2.0.1.noarch
+--> Processing Dependency: perl(IO::Socket::IP) >= 0.20 for package: perl-IO-Socket-SSL-1.94-7.amzn2.0.1.noarch
+--> Processing Dependency: perl(Net::SSLeay) for package: perl-IO-Socket-SSL-1.94-7.amzn2.0.1.noarch
+--> Processing Dependency: perl(Net::LibIDN) for package: perl-IO-Socket-SSL-1.94-7.amzn2.0.1.noarch
+--> Processing Dependency: perl(Mozilla::CA) for package: perl-IO-Socket-SSL-1.94-7.amzn2.0.1.noarch
+---> Package perl-PlRPC.noarch 0:0.2020-14.amzn2 will be installed
+--> Processing Dependency: perl(Net::Daemon) >= 0.13 for package: perl-PlRPC-0.2020-14.amzn2.noarch
+--> Processing Dependency: perl(Net::Daemon::Test) for package: perl-PlRPC-0.2020-14.amzn2.noarch
+--> Processing Dependency: perl(Net::Daemon::Log) for package: perl-PlRPC-0.2020-14.amzn2.noarch
+--> Processing Dependency: perl(Compress::Zlib) for package: perl-PlRPC-0.2020-14.amzn2.noarch
+---> Package perl-TimeDate.noarch 1:2.30-2.amzn2 will be installed
+---> Package perl-YAML.noarch 0:0.84-5.amzn2 will be installed
+---> Package python3-libs.x86_64 0:3.7.9-1.amzn2.0.1 will be installed
+---> Package python3-pip.noarch 0:9.0.3-1.amzn2.0.2 will be installed
+---> Package python3-setuptools.noarch 0:38.4.0-3.amzn2.0.6 will be installed
+---> Package subversion-libs.x86_64 0:1.7.14-16.amzn2.0.1 will be installed
+---> Package subversion-perl.x86_64 0:1.7.14-16.amzn2.0.1 will be installed
+---> Package tcl.x86_64 1:8.5.13-8.amzn2.0.2 will be installed
+--> Running transaction check
+---> Package adwaita-icon-theme.noarch 0:3.26.0-1.amzn2 will be installed
+--> Processing Dependency: adwaita-cursor-theme = 3.26.0-1.amzn2 for package: adwaita-icon-theme-3.26.0-1.amzn2.noarch
+---> Package apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+---> Package at-spi2-atk.x86_64 0:2.22.0-2.amzn2.0.2 will be installed
+--> Processing Dependency: at-spi2-core(x86-64) >= 2.17.90 for package: at-spi2-atk-2.22.0-2.amzn2.0.2.x86_64
+--> Processing Dependency: libatspi.so.0()(64bit) for package: at-spi2-atk-2.22.0-2.amzn2.0.2.x86_64
+---> Package colord-libs.x86_64 0:1.3.4-1.amzn2.0.2 will be installed
+--> Processing Dependency: libgusb.so.2(LIBGUSB_0.1.1)(64bit) for package: colord-libs-1.3.4-1.amzn2.0.2.x86_64
+--> Processing Dependency: libgusb.so.2(LIBGUSB_0.1.0)(64bit) for package: colord-libs-1.3.4-1.amzn2.0.2.x86_64
+--> Processing Dependency: libusb-1.0.so.0()(64bit) for package: colord-libs-1.3.4-1.amzn2.0.2.x86_64
+--> Processing Dependency: liblcms2.so.2()(64bit) for package: colord-libs-1.3.4-1.amzn2.0.2.x86_64
+--> Processing Dependency: libgusb.so.2()(64bit) for package: colord-libs-1.3.4-1.amzn2.0.2.x86_64
+---> Package cups-libs.x86_64 1:1.6.3-51.amzn2 will be installed
+--> Processing Dependency: libavahi-common.so.3()(64bit) for package: 1:cups-libs-1.6.3-51.amzn2.x86_64
+--> Processing Dependency: libavahi-client.so.3()(64bit) for package: 1:cups-libs-1.6.3-51.amzn2.x86_64
+---> Package dconf.x86_64 0:0.28.0-4.amzn2 will be installed
+---> Package fontconfig.x86_64 0:2.13.0-4.3.amzn2 will be installed
+--> Processing Dependency: fontpackages-filesystem for package: fontconfig-2.13.0-4.3.amzn2.x86_64
+--> Processing Dependency: dejavu-sans-fonts for package: fontconfig-2.13.0-4.3.amzn2.x86_64
+---> Package fribidi.x86_64 0:1.0.2-1.amzn2.1 will be installed
+---> Package gcc.x86_64 0:7.3.1-12.amzn2 will be installed
+--> Processing Dependency: cpp = 7.3.1-12.amzn2 for package: gcc-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: libsanitizer >= 7.3.1-12.amzn2 for package: gcc-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: libquadmath >= 7.3.1-12.amzn2 for package: gcc-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: libmpx >= 7.3.1-12.amzn2 for package: gcc-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: libitm >= 7.3.1-12.amzn2 for package: gcc-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: libcilkrts >= 7.3.1-12.amzn2 for package: gcc-7.3.1-12.amzn2.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-7.3.1-12.amzn2.x86_64
+---> Package git-gnome-keyring.x86_64 0:2.14.5-1.amzn2 will be installed
+--> Processing Dependency: git = 2.14.5-1.amzn2 for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+---> Package gnutls.x86_64 0:3.3.29-9.amzn2 will be installed
+--> Processing Dependency: trousers >= 0.3.11.2 for package: gnutls-3.3.29-9.amzn2.x86_64
+--> Processing Dependency: libnettle.so.4()(64bit) for package: gnutls-3.3.29-9.amzn2.x86_64
+--> Processing Dependency: libhogweed.so.2()(64bit) for package: gnutls-3.3.29-9.amzn2.x86_64
+---> Package gtk-update-icon-cache.x86_64 0:3.22.30-3.amzn2 will be installed
+---> Package harfbuzz.x86_64 0:1.7.5-2.amzn2 will be installed
+--> Processing Dependency: libgraphite2.so.3()(64bit) for package: harfbuzz-1.7.5-2.amzn2.x86_64
+---> Package hicolor-icon-theme.noarch 0:0.12-7.amzn2 will be installed
+---> Package jasper-libs.x86_64 0:1.900.1-33.amzn2 will be installed
+---> Package json-glib.x86_64 0:1.4.2-2.amzn2 will be installed
+---> Package libX11-common.noarch 0:1.6.7-3.amzn2 will be installed
+---> Package libXcomposite.x86_64 0:0.4.4-4.1.amzn2.0.2 will be installed
+---> Package libXcursor.x86_64 0:1.1.15-1.amzn2 will be installed
+---> Package libXdamage.x86_64 0:1.1.4-4.1.amzn2.0.2 will be installed
+---> Package libXext.x86_64 0:1.3.3-3.amzn2.0.2 will be installed
+---> Package libXfixes.x86_64 0:5.0.3-1.amzn2.0.2 will be installed
+---> Package libXi.x86_64 0:1.7.9-1.amzn2.0.2 will be installed
+---> Package libXinerama.x86_64 0:1.1.3-2.1.amzn2.0.2 will be installed
+---> Package libXrandr.x86_64 0:1.5.1-2.amzn2.0.3 will be installed
+---> Package libXrender.x86_64 0:0.9.10-1.amzn2.0.2 will be installed
+---> Package libatomic.x86_64 0:7.3.1-12.amzn2 will be installed
+---> Package libepoxy.x86_64 0:1.3.1-2.amzn2 will be installed
+---> Package libglvnd-egl.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 will be installed
+--> Processing Dependency: libglvnd(x86-64) = 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 for package: 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+--> Processing Dependency: mesa-libEGL(x86-64) >= 13.0.4-1 for package: 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+--> Processing Dependency: libGLdispatch.so.0()(64bit) for package: 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+---> Package libglvnd-glx.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 will be installed
+--> Processing Dependency: mesa-libGL(x86-64) >= 13.0.4-1 for package: 1:libglvnd-glx-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+---> Package libmpc.x86_64 0:1.0.1-3.amzn2.0.2 will be installed
+---> Package libproxy.x86_64 0:0.4.11-10.amzn2.0.3 will be installed
+--> Processing Dependency: libmodman.so.1()(64bit) for package: libproxy-0.4.11-10.amzn2.0.3.x86_64
+---> Package libthai.x86_64 0:0.1.14-9.amzn2.0.2 will be installed
+---> Package libwayland-client.x86_64 0:1.17.0-1.amzn2 will be installed
+---> Package libwayland-cursor.x86_64 0:1.17.0-1.amzn2 will be installed
+---> Package libwayland-egl.x86_64 0:1.17.0-1.amzn2 will be installed
+---> Package libxcb.x86_64 0:1.12-1.amzn2.0.2 will be installed
+--> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.12-1.amzn2.0.2.x86_64
+---> Package libxkbcommon.x86_64 0:0.7.1-3.amzn2 will be installed
+--> Processing Dependency: xkeyboard-config for package: libxkbcommon-0.7.1-3.amzn2.x86_64
+---> Package mpfr.x86_64 0:3.1.1-4.amzn2.0.2 will be installed
+---> Package pakchois.x86_64 0:0.4-10.amzn2.0.2 will be installed
+---> Package perl-Digest-SHA.x86_64 1:5.85-4.amzn2.0.2 will be installed
+---> Package perl-IO-Compress.noarch 0:2.061-2.amzn2 will be installed
+--> Processing Dependency: perl(Compress::Raw::Zlib) >= 2.061 for package: perl-IO-Compress-2.061-2.amzn2.noarch
+--> Processing Dependency: perl(Compress::Raw::Bzip2) >= 2.061 for package: perl-IO-Compress-2.061-2.amzn2.noarch
+---> Package perl-IO-Socket-IP.noarch 0:0.21-5.amzn2 will be installed
+---> Package perl-Mozilla-CA.noarch 0:20130114-5.amzn2 will be installed
+---> Package perl-Net-Daemon.noarch 0:0.48-5.amzn2 will be installed
+---> Package perl-Net-LibIDN.x86_64 0:0.12-15.amzn2.0.2 will be installed
+---> Package perl-Net-SSLeay.x86_64 0:1.55-6.amzn2.0.1 will be installed
+---> Package pixman.x86_64 0:0.34.0-1.amzn2.0.2 will be installed
+---> Package rest.x86_64 0:0.8.0-2.amzn2 will be installed
+--> Processing Dependency: libsoup-gnome-2.4.so.1()(64bit) for package: rest-0.8.0-2.amzn2.x86_64
+--> Processing Dependency: libsoup-2.4.so.1()(64bit) for package: rest-0.8.0-2.amzn2.x86_64
+--> Running transaction check
+---> Package adwaita-cursor-theme.noarch 0:3.26.0-1.amzn2 will be installed
+---> Package at-spi2-core.x86_64 0:2.22.0-1.amzn2.0.2 will be installed
+--> Processing Dependency: libXtst.so.6()(64bit) for package: at-spi2-core-2.22.0-1.amzn2.0.2.x86_64
+---> Package avahi-libs.x86_64 0:0.6.31-20.amzn2 will be installed
+---> Package cpp.x86_64 0:7.3.1-12.amzn2 will be installed
+---> Package dejavu-sans-fonts.noarch 0:2.33-6.amzn2 will be installed
+--> Processing Dependency: dejavu-fonts-common = 2.33-6.amzn2 for package: dejavu-sans-fonts-2.33-6.amzn2.noarch
+---> Package fontpackages-filesystem.noarch 0:1.44-8.amzn2 will be installed
+---> Package git-gnome-keyring.x86_64 0:2.14.5-1.amzn2 will be installed
+--> Processing Dependency: git = 2.14.5-1.amzn2 for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+---> Package glibc-devel.x86_64 0:2.26-39.amzn2 will be installed
+--> Processing Dependency: glibc-headers = 2.26-39.amzn2 for package: glibc-devel-2.26-39.amzn2.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.26-39.amzn2.x86_64
+---> Package graphite2.x86_64 0:1.3.10-1.amzn2.0.2 will be installed
+---> Package lcms2.x86_64 0:2.6-3.amzn2.0.2 will be installed
+---> Package libXau.x86_64 0:1.0.8-2.1.amzn2.0.2 will be installed
+---> Package libcilkrts.x86_64 0:7.3.1-12.amzn2 will be installed
+---> Package libglvnd.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 will be installed
+---> Package libgusb.x86_64 0:0.2.9-1.amzn2.0.2 will be installed
+---> Package libitm.x86_64 0:7.3.1-12.amzn2 will be installed
+---> Package libmodman.x86_64 0:2.0.1-8.amzn2.0.2 will be installed
+---> Package libmpx.x86_64 0:7.3.1-12.amzn2 will be installed
+---> Package libquadmath.x86_64 0:7.3.1-12.amzn2 will be installed
+---> Package libsanitizer.x86_64 0:7.3.1-12.amzn2 will be installed
+---> Package libsoup.x86_64 0:2.56.0-6.amzn2 will be installed
+--> Processing Dependency: glib-networking(x86-64) >= 2.38.0 for package: libsoup-2.56.0-6.amzn2.x86_64
+---> Package libusbx.x86_64 0:1.0.21-1.amzn2 will be installed
+---> Package mesa-libEGL.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+--> Processing Dependency: mesa-libgbm = 18.3.4-5.amzn2.0.1 for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+--> Processing Dependency: libxshmfence.so.1()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+--> Processing Dependency: libwayland-server.so.0()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+--> Processing Dependency: libglapi.so.0()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+--> Processing Dependency: libgbm.so.1()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+---> Package mesa-libGL.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+--> Processing Dependency: libXxf86vm.so.1()(64bit) for package: mesa-libGL-18.3.4-5.amzn2.0.1.x86_64
+---> Package nettle.x86_64 0:2.7.1-8.amzn2.0.2 will be installed
+---> Package perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.amzn2.0.2 will be installed
+---> Package perl-Compress-Raw-Zlib.x86_64 1:2.061-4.amzn2.0.2 will be installed
+---> Package trousers.x86_64 0:0.3.14-2.amzn2.0.2 will be installed
+---> Package xkeyboard-config.noarch 0:2.20-1.amzn2 will be installed
+--> Running transaction check
+---> Package dejavu-fonts-common.noarch 0:2.33-6.amzn2 will be installed
+---> Package git-gnome-keyring.x86_64 0:2.14.5-1.amzn2 will be installed
+--> Processing Dependency: git = 2.14.5-1.amzn2 for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+---> Package glib-networking.x86_64 0:2.56.1-1.amzn2 will be installed
+--> Processing Dependency: gsettings-desktop-schemas for package: glib-networking-2.56.1-1.amzn2.x86_64
+---> Package glibc-headers.x86_64 0:2.26-39.amzn2 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.26-39.amzn2.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.26-39.amzn2.x86_64
+---> Package libXtst.x86_64 0:1.2.3-1.amzn2.0.2 will be installed
+---> Package libXxf86vm.x86_64 0:1.1.4-1.amzn2.0.2 will be installed
+---> Package libwayland-server.x86_64 0:1.17.0-1.amzn2 will be installed
+---> Package libxshmfence.x86_64 0:1.2-1.amzn2.0.2 will be installed
+---> Package mesa-libgbm.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+---> Package mesa-libglapi.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+--> Running transaction check
+---> Package git-gnome-keyring.x86_64 0:2.14.5-1.amzn2 will be installed
+--> Processing Dependency: git = 2.14.5-1.amzn2 for package: git-gnome-keyring-2.14.5-1.amzn2.x86_64
+---> Package gsettings-desktop-schemas.x86_64 0:3.28.0-3.amzn2.0.1 will be installed
+---> Package kernel-headers.x86_64 0:4.14.209-160.339.amzn2 will be installed
+--> Finished Dependency Resolution
+Error: Package: git-gnome-keyring-2.14.5-1.amzn2.x86_64 (amzn2-core)
+           Requires: git = 2.14.5-1.amzn2
+           Available: git-2.14.3-2.amzn2.x86_64 (amzn2-core)
+               git = 2.14.3-2.amzn2
+           Available: git-2.14.4-1.amzn2.x86_64 (amzn2-core)
+               git = 2.14.4-1.amzn2
+           Available: git-2.14.4-1.amzn2.0.1.x86_64 (amzn2-core)
+               git = 2.14.4-1.amzn2.0.1
+           Available: git-2.14.5-1.amzn2.x86_64 (amzn2-core)
+               git = 2.14.5-1.amzn2
+           Available: git-2.17.2-2.amzn2.x86_64 (amzn2-core)
+               git = 2.17.2-2.amzn2
+           Available: git-2.23.1-0.amzn2.0.2.x86_64 (amzn2-core)
+               git = 2.23.1-0.amzn2.0.2
+           Available: git-2.23.1-1.amzn2.0.1.x86_64 (amzn2-core)
+               git = 2.23.1-1.amzn2.0.1
+           Available: git-2.23.1-1.amzn2.0.2.x86_64 (amzn2-core)
+               git = 2.23.1-1.amzn2.0.2
+           Installing: git-2.23.3-1.amzn2.0.1.x86_64 (amzn2-core)
+               git = 2.23.3-1.amzn2.0.1
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+[root@ip-172-31-34-134 ~]#
+[root@ip-172-31-34-134 ~]#
+[root@ip-172-31-34-134 ~]# git -version
+bash: git: command not found
+[root@ip-172-31-34-134 ~]# git --version
+bash: git: command not found
+[root@ip-172-31-34-134 ~]# git version
+bash: git: command not found
+[root@ip-172-31-34-134 ~]# yum install git
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package git.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl-Git = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: git-core-doc = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: git-core = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: emacs-filesystem >= 25.3 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Term::ReadKey) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Git::I18N) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Git) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: libsecret-1.so.0()(64bit) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package emacs-filesystem.noarch 1:25.3-3.amzn2.0.2 will be installed
+---> Package git-core.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-core-doc.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package libsecret.x86_64 0:0.18.5-2.amzn2.0.2 will be installed
+---> Package perl-Git.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl(Error) for package: perl-Git-2.23.3-1.amzn2.0.1.noarch
+---> Package perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2 will be installed
+--> Running transaction check
+---> Package perl-Error.noarch 1:0.17020-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================
+ Package                    Arch             Version                        Repository            Size
+=======================================================================================================
+Installing:
+ git                        x86_64           2.23.3-1.amzn2.0.1             amzn2-core           135 k
+Installing for dependencies:
+ emacs-filesystem           noarch           1:25.3-3.amzn2.0.2             amzn2-core            64 k
+ git-core                   x86_64           2.23.3-1.amzn2.0.1             amzn2-core           5.0 M
+ git-core-doc               noarch           2.23.3-1.amzn2.0.1             amzn2-core           2.4 M
+ libsecret                  x86_64           0.18.5-2.amzn2.0.2             amzn2-core           153 k
+ perl-Error                 noarch           1:0.17020-2.amzn2              amzn2-core            32 k
+ perl-Git                   noarch           2.23.3-1.amzn2.0.1             amzn2-core            47 k
+ perl-TermReadKey           x86_64           2.30-20.amzn2.0.2              amzn2-core            31 k
+
+Transaction Summary
+=======================================================================================================
+Install  1 Package (+7 Dependent packages)
+
+Total download size: 7.9 M
+Installed size: 41 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/8): emacs-filesystem-25.3-3.amzn2.0.2.noarch.rpm                             |  64 kB  00:00:00
+(2/8): git-2.23.3-1.amzn2.0.1.x86_64.rpm                                        | 135 kB  00:00:00
+(3/8): git-core-doc-2.23.3-1.amzn2.0.1.noarch.rpm                               | 2.4 MB  00:00:00
+(4/8): libsecret-0.18.5-2.amzn2.0.2.x86_64.rpm                                  | 153 kB  00:00:00
+(5/8): git-core-2.23.3-1.amzn2.0.1.x86_64.rpm                                   | 5.0 MB  00:00:00
+(6/8): perl-Error-0.17020-2.amzn2.noarch.rpm                                    |  32 kB  00:00:00
+(7/8): perl-TermReadKey-2.30-20.amzn2.0.2.x86_64.rpm                            |  31 kB  00:00:00
+(8/8): perl-Git-2.23.3-1.amzn2.0.1.noarch.rpm                                   |  47 kB  00:00:00
+-------------------------------------------------------------------------------------------------------
+Total                                                                   29 MB/s | 7.9 MB  00:00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : git-core-2.23.3-1.amzn2.0.1.x86_64                                                  1/8
+  Installing : git-core-doc-2.23.3-1.amzn2.0.1.noarch                                              2/8
+  Installing : 1:emacs-filesystem-25.3-3.amzn2.0.2.noarch                                          3/8
+  Installing : 1:perl-Error-0.17020-2.amzn2.noarch                                                 4/8
+  Installing : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                                           5/8
+  Installing : libsecret-0.18.5-2.amzn2.0.2.x86_64                                                 6/8
+  Installing : perl-Git-2.23.3-1.amzn2.0.1.noarch                                                  7/8
+  Installing : git-2.23.3-1.amzn2.0.1.x86_64                                                       8/8
+  Verifying  : libsecret-0.18.5-2.amzn2.0.2.x86_64                                                 1/8
+  Verifying  : git-2.23.3-1.amzn2.0.1.x86_64                                                       2/8
+  Verifying  : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                                           3/8
+  Verifying  : git-core-2.23.3-1.amzn2.0.1.x86_64                                                  4/8
+  Verifying  : 1:perl-Error-0.17020-2.amzn2.noarch                                                 5/8
+  Verifying  : 1:emacs-filesystem-25.3-3.amzn2.0.2.noarch                                          6/8
+  Verifying  : perl-Git-2.23.3-1.amzn2.0.1.noarch                                                  7/8
+  Verifying  : git-core-doc-2.23.3-1.amzn2.0.1.noarch                                              8/8
+
+Installed:
+  git.x86_64 0:2.23.3-1.amzn2.0.1
+
+Dependency Installed:
+  emacs-filesystem.noarch 1:25.3-3.amzn2.0.2            git-core.x86_64 0:2.23.3-1.amzn2.0.1
+  git-core-doc.noarch 0:2.23.3-1.amzn2.0.1              libsecret.x86_64 0:0.18.5-2.amzn2.0.2
+  perl-Error.noarch 1:0.17020-2.amzn2                   perl-Git.noarch 0:2.23.3-1.amzn2.0.1
+  perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2
+
+Complete!
+[root@ip-172-31-34-134 ~]# git --version
+git version 2.23.3
+[root@ip-172-31-34-134 ~]# git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+[root@ip-172-31-34-134 ~]# git config --global user.name "nsirikon"
+[root@ip-172-31-34-134 ~]# git config --global user.email "sirikonda.naveen@gmail.com"
+[root@ip-172-31-34-134 ~]# git config --list
+user.name=nsirikon
+user.email=sirikonda.naveen@gmail.com
+[root@ip-172-31-34-134 ~]# mkdir -p new_git
+[root@ip-172-31-34-134 ~]# cd new_git
+[root@ip-172-31-34-134 new_git]# pwd
+/root/new_git
+[root@ip-172-31-34-134 new_git]# git init
+Initialized empty Git repository in /root/new_git/.git/
+[root@ip-172-31-34-134 new_git]# ls -l
+total 0
+[root@ip-172-31-34-134 new_git]#  git config --global user.name "nsirikonda"
+[root@ip-172-31-34-134 new_git]# git config --list
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+[root@ip-172-31-34-134 new_git]# vim file
+[root@ip-172-31-34-134 new_git]# cat file
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+
+[root@ip-172-31-34-134 new_git]# git status file
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-34-134 new_git]# git add .
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file
+
+[root@ip-172-31-34-134 new_git]# git commit -m "this is my 1st commit"
+[master (root-commit) 4837298] this is my 1st commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 file
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-34-134 new_git]# git log
+commit 4837298ff1007709d2c5f6f582ade85957b6639c (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:49:21 2020 +0000
+
+    this is my 1st commit
+[root@ip-172-31-34-134 new_git]# git show 4837298ff100
+commit 4837298ff1007709d2c5f6f582ade85957b6639c (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:49:21 2020 +0000
+
+    this is my 1st commit
+
+diff --git a/file b/file
+new file mode 100644
+index 0000000..f6af398
+--- /dev/null
++++ b/file
+@@ -0,0 +1,7 @@
++user.name=nsirikonda
++user.email=sirikonda.naveen@gmail.com
++core.repositoryformatversion=0
++core.filemode=true
++core.bare=false
++core.logallrefupdates=true
++
+[root@ip-172-31-34-134 new_git]# ls -l
+total 4
+-rw-r--r-- 1 root root 153 Dec 23 05:46 file
+[root@ip-172-31-34-134 new_git]# vi file
+[root@ip-172-31-34-134 new_git]# cat file
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]# git add .
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file
+
+[root@ip-172-31-34-134 new_git]# git commit -m "this is my 2nd commit"
+[master ebeafdc] this is my 2nd commit
+ 1 file changed, 6 insertions(+)
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-34-134 new_git]# git log
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75 (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+
+commit 4837298ff1007709d2c5f6f582ade85957b6639c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:49:21 2020 +0000
+
+    this is my 1st commit
+[root@ip-172-31-34-134 new_git]# git show ebeafdca20d3
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75 (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+
+diff --git a/file b/file
+index f6af398..2752f35 100644
+--- a/file
++++ b/file
+@@ -4,4 +4,10 @@ core.repositoryformatversion=0
+ core.filemode=true
+ core.bare=false
+ core.logallrefupdates=true
++user.name=nsirikonda
++user.email=sirikonda.naveen@gmail.com
++core.repositoryformatversion=0
++core.filemode=true
++core.bare=false
++core.logallrefupdates=true
+
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]# git remote add origin https://github.com/nsirikonda/Syed.git
+[root@ip-172-31-34-134 new_git]# git push -u origin master
+Username for 'https://github.com': nsirikonda
+Password for 'https://nsirikonda@github.com':
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 546 bytes | 546.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/nsirikonda/Syed.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]# git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/nsirikonda/Syed
+ * branch            master     -> FETCH_HEAD
+   ebeafdc..3e17925  master     -> origin/master
+Updating ebeafdc..3e17925
+Fast-forward
+ file.data | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+ create mode 100644 file.data
+[root@ip-172-31-34-134 new_git]# ls -ltr
+total 8
+-rw-r--r-- 1 root root 305 Dec 23 05:53 file
+-rw-r--r-- 1 root root 568 Dec 23 06:20 file.data
+[root@ip-172-31-34-134 new_git]# cat file.data
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+Secondary private IPs
+Scheduled events
+No scheduled events
+VPC ID
+vpc-d713c5aa (Default-VPC)
+AMI ID
+amzn2-ami-hvm-2.0.20201218.1-x86_64-gp2 (ami-0be2609ba883822ec)
+Platform
+Amazon Linux
+Subnet ID
+subnet-b3e36392
+Platform details
+Linux/UNIX
+Network interfaces
+eth0
+[root@ip-172-31-34-134 new_git]# git log
+commit 3e179254f6d1695426876b0fdabe421e2944335f (HEAD -> master, origin/master)
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+
+commit 4837298ff1007709d2c5f6f582ade85957b6639c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:49:21 2020 +0000
+
+    this is my 1st commit
+[root@ip-172-31-34-134 new_git]# git logs -1
+git: 'logs' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+[root@ip-172-31-34-134 new_git]# git log -1
+commit 3e179254f6d1695426876b0fdabe421e2944335f (HEAD -> master, origin/master)
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+[root@ip-172-31-34-134 new_git]# git log -2
+commit 3e179254f6d1695426876b0fdabe421e2944335f (HEAD -> master, origin/master)
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+[root@ip-172-31-34-134 new_git]# git log -3
+commit 3e179254f6d1695426876b0fdabe421e2944335f (HEAD -> master, origin/master)
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+
+commit 4837298ff1007709d2c5f6f582ade85957b6639c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:49:21 2020 +0000
+
+    this is my 1st commit
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]# git log --oneline
+3e17925 (HEAD -> master, origin/master) this mesg from Kiran
+ebeafdc this is my 2nd commit
+4837298 this is my 1st commit
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]# git log --grep "Kiran"
+commit 3e179254f6d1695426876b0fdabe421e2944335f (HEAD -> master, origin/master)
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+[root@ip-172-31-34-134 new_git]# git log --grep "2nd"
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+[root@ip-172-31-34-134 new_git]# pwd
+/root/new_git
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]# touch 12.py 13.css 14.jp 15.java 16.html
+[root@ip-172-31-34-134 new_git]# ls -ltr
+total 8
+-rw-r--r-- 1 root root 305 Dec 23 05:53 file
+-rw-r--r-- 1 root root 568 Dec 23 06:20 file.data
+-rw-r--r-- 1 root root   0 Dec 23 06:27 16.html
+-rw-r--r-- 1 root root   0 Dec 23 06:27 15.java
+-rw-r--r-- 1 root root   0 Dec 23 06:27 14.jp
+-rw-r--r-- 1 root root   0 Dec 23 06:27 13.css
+-rw-r--r-- 1 root root   0 Dec 23 06:27 12.py
+[root@ip-172-31-34-134 new_git]# vim .gitingore
+[root@ip-172-31-34-134 new_git]# vim .gitingore
+[root@ip-172-31-34-134 new_git]# touch 24.jp 34.jp
+[root@ip-172-31-34-134 new_git]# ls -l
+total 8
+-rw-r--r-- 1 root root   0 Dec 23 06:27 12.py
+-rw-r--r-- 1 root root   0 Dec 23 06:27 13.css
+-rw-r--r-- 1 root root   0 Dec 23 06:27 14.jp
+-rw-r--r-- 1 root root   0 Dec 23 06:27 15.java
+-rw-r--r-- 1 root root   0 Dec 23 06:27 16.html
+-rw-r--r-- 1 root root   0 Dec 23 06:28 24.jp
+-rw-r--r-- 1 root root   0 Dec 23 06:28 34.jp
+-rw-r--r-- 1 root root 305 Dec 23 05:53 file
+-rw-r--r-- 1 root root 568 Dec 23 06:20 file.data
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitingore
+        12.py
+        13.css
+        14.jp
+        15.java
+        16.html
+        24.jp
+        34.jp
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-34-134 new_git]# git add .
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitingore
+        new file:   12.py
+        new file:   13.css
+        new file:   14.jp
+        new file:   15.java
+        new file:   16.html
+        new file:   24.jp
+        new file:   34.jp
+
+[root@ip-172-31-34-134 new_git]# git commit -m "new files added in ^C
+[root@ip-172-31-34-134 new_git]# git add .gitingore
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitingore
+        new file:   12.py
+        new file:   13.css
+        new file:   14.jp
+        new file:   15.java
+        new file:   16.html
+        new file:   24.jp
+        new file:   34.jp
+
+[root@ip-172-31-34-134 new_git]# git commit -m "new files added in github"
+[master 69acb7c] new files added in github
+ 8 files changed, 1 insertion(+)
+ create mode 100644 .gitingore
+ create mode 100644 12.py
+ create mode 100644 13.css
+ create mode 100644 14.jp
+ create mode 100644 15.java
+ create mode 100644 16.html
+ create mode 100644 24.jp
+ create mode 100644 34.jp
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[root@ip-172-31-34-134 new_git]# git push master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[root@ip-172-31-34-134 new_git]# git log
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+commit 3e179254f6d1695426876b0fdabe421e2944335f (origin/master)
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+
+commit 4837298ff1007709d2c5f6f582ade85957b6639c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:49:21 2020 +0000
+
+    this is my 1st commit
+[root@ip-172-31-34-134 new_git]# git show 69acb7c9001b0fbb9ec7425084437616a08a688c
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+diff --git a/.gitingore b/.gitingore
+new file mode 100644
+index 0000000..2c64b6e
+--- /dev/null
++++ b/.gitingore
+@@ -0,0 +1 @@
++*.jp
+diff --git a/12.py b/12.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/13.css b/13.css
+new file mode 100644
+index 0000000..e69de29
+diff --git a/14.jp b/14.jp
+new file mode 100644
+index 0000000..e69de29
+diff --git a/15.java b/15.java
+new file mode 100644
+index 0000000..e69de29
+diff --git a/16.html b/16.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/24.jp b/24.jp
+new file mode 100644
+index 0000000..e69de29
+diff --git a/34.jp b/34.jp
+new file mode 100644
+index 0000000..e69de29
+
+[root@ip-172-31-34-134 new_git]# git add .gitingorec^C
+[root@ip-172-31-34-134 new_git]# ls -l
+total 8
+-rw-r--r-- 1 root root   0 Dec 23 06:27 12.py
+-rw-r--r-- 1 root root   0 Dec 23 06:27 13.css
+-rw-r--r-- 1 root root   0 Dec 23 06:27 14.jp
+-rw-r--r-- 1 root root   0 Dec 23 06:27 15.java
+-rw-r--r-- 1 root root   0 Dec 23 06:27 16.html
+-rw-r--r-- 1 root root   0 Dec 23 06:28 24.jp
+-rw-r--r-- 1 root root   0 Dec 23 06:28 34.jp
+-rw-r--r-- 1 root root 305 Dec 23 05:53 file
+-rw-r--r-- 1 root root 568 Dec 23 06:20 file.data
+[root@ip-172-31-34-134 new_git]# mv .gitingore .gitignore
+[root@ip-172-31-34-134 new_git]# git add .gitignore
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .gitingore
+
+[root@ip-172-31-34-134 new_git]# git commit -m "adding ignore file"
+[master f93d6eb] adding ignore file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+[root@ip-172-31-34-134 new_git]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .gitingore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-34-134 new_git]# git log
+commit f93d6eb664e1cefbaea878f745e24a90403c9025 (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:33:53 2020 +0000
+
+    adding ignore file
+
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+commit 3e179254f6d1695426876b0fdabe421e2944335f (origin/master)
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+
+commit 4837298ff1007709d2c5f6f582ade85957b6639c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:49:21 2020 +0000
+
+    this is my 1st commit
+
+[root@ip-172-31-34-134 new_git]# git show f93d6eb664e1cefbaea878f745e24a90403c9025
+commit f93d6eb664e1cefbaea878f745e24a90403c9025 (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:33:53 2020 +0000
+
+    adding ignore file
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..2c64b6e
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++*.jp
+[root@ip-172-31-34-134 new_git]# git push origin master
+Username for 'https://github.com': nsirikonda
+Password for 'https://nsirikonda@github.com':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 572 bytes | 572.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/nsirikonda/Syed.git
+   3e17925..f93d6eb  master -> master
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]#
+[root@ip-172-31-34-134 new_git]# ls -l
+total 8
+-rw-r--r-- 1 root root   0 Dec 23 06:27 12.py
+-rw-r--r-- 1 root root   0 Dec 23 06:27 13.css
+-rw-r--r-- 1 root root   0 Dec 23 06:27 14.jp
+-rw-r--r-- 1 root root   0 Dec 23 06:27 15.java
+-rw-r--r-- 1 root root   0 Dec 23 06:27 16.html
+-rw-r--r-- 1 root root   0 Dec 23 06:28 24.jp
+-rw-r--r-- 1 root root   0 Dec 23 06:28 34.jp
+-rw-r--r-- 1 root root 305 Dec 23 05:53 file
+-rw-r--r-- 1 root root 568 Dec 23 06:20 file.data
+[root@ip-172-31-34-134 new_git]#
+
