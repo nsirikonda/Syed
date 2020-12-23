@@ -1,0 +1,27 @@
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user.name=nsirikonda
+user.email=sirikonda.naveen@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+Secondary private IPs
+Scheduled events
+No scheduled events
+VPC ID
+vpc-d713c5aa (Default-VPC)
+AMI ID
+amzn2-ami-hvm-2.0.20201218.1-x86_64-gp2 (ami-0be2609ba883822ec)
+Platform
+Amazon Linux
+Subnet ID
+subnet-b3e36392
+Platform details
+Linux/UNIX
+Network interfaces
+eth0
