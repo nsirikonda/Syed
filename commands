@@ -1,0 +1,709 @@
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]# git branch
+* master
+[root@ip-172-31-41-37 Syed]# git log
+commit 479e65764e48234689221a7a22f21ca35d0ab303 (HEAD -> master, origin/master, origin/HEAD)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:41:18 2020 +0000
+
+    git class
+
+commit f93d6eb664e1cefbaea878f745e24a90403c9025
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:33:53 2020 +0000
+
+    adding ignore file
+
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+commit 3e179254f6d1695426876b0fdabe421e2944335f
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+[root@ip-172-31-41-37 Syed]# git log --1
+fatal: unrecognized argument: --1
+[root@ip-172-31-41-37 Syed]# git log --oneline
+479e657 (HEAD -> master, origin/master, origin/HEAD) git class
+f93d6eb adding ignore file
+69acb7c new files added in github
+3e17925 this mesg from Kiran
+ebeafdc this is my 2nd commit
+4837298 this is my 1st commit
+[root@ip-172-31-41-37 Syed]# git branch kiran_branch
+[root@ip-172-31-41-37 Syed]# git branch
+  kiran_branch
+* master
+[root@ip-172-31-41-37 Syed]# git checkout kiran_branch
+Switched to branch 'kiran_branch'
+[root@ip-172-31-41-37 Syed]# git branch
+* kiran_branch
+  master
+[root@ip-172-31-41-37 Syed]# git log
+commit 479e65764e48234689221a7a22f21ca35d0ab303 (HEAD -> kiran_branch, origin/master, origin/HEAD, master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:41:18 2020 +0000
+
+    git class
+
+commit f93d6eb664e1cefbaea878f745e24a90403c9025
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:33:53 2020 +0000
+
+    adding ignore file
+
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+commit 3e179254f6d1695426876b0fdabe421e2944335f
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+[root@ip-172-31-41-37 Syed]# git log --oneline
+479e657 (HEAD -> kiran_branch, origin/master, origin/HEAD, master) git class
+f93d6eb adding ignore file
+69acb7c new files added in github
+3e17925 this mesg from Kiran
+ebeafdc this is my 2nd commit
+4837298 this is my 1st commit
+[root@ip-172-31-41-37 Syed]# touch hari
+[root@ip-172-31-41-37 Syed]# git status
+On branch kiran_branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hari
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git add hari
+[root@ip-172-31-41-37 Syed]# git status
+On branch kiran_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hari
+
+[root@ip-172-31-41-37 Syed]# git commit -m "adding into kiran branch"
+[kiran_branch 50583a1] adding into kiran branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hari
+[root@ip-172-31-41-37 Syed]# git status
+On branch kiran_branch
+nothing to commit, working tree clean
+[root@ip-172-31-41-37 Syed]# git log
+commit 50583a18efe8be5ac61b59a35644dad95af043c5 (HEAD -> kiran_branch)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Thu Dec 24 05:35:26 2020 +0000
+
+    adding into kiran branch
+
+commit 479e65764e48234689221a7a22f21ca35d0ab303 (origin/master, origin/HEAD, master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:41:18 2020 +0000
+
+    git class
+
+commit f93d6eb664e1cefbaea878f745e24a90403c9025
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:33:53 2020 +0000
+
+    adding ignore file
+
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+commit 3e179254f6d1695426876b0fdabe421e2944335f
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+[root@ip-172-31-41-37 Syed]# git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[root@ip-172-31-41-37 Syed]# git branch
+  kiran_branch
+* master
+[root@ip-172-31-41-37 Syed]# git log
+commit 479e65764e48234689221a7a22f21ca35d0ab303 (HEAD -> master, origin/master, origin/HEAD)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:41:18 2020 +0000
+
+    git class
+
+commit f93d6eb664e1cefbaea878f745e24a90403c9025
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:33:53 2020 +0000
+
+    adding ignore file
+
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+commit 3e179254f6d1695426876b0fdabe421e2944335f
+Author: kingkong <kingkong@gmail.com>
+Date:   Wed Dec 23 06:14:53 2020 +0000
+
+    this mesg from Kiran
+
+commit ebeafdca20d3653bb559cc294ed8f73fb1f25f75
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 05:54:09 2020 +0000
+
+    this is my 2nd commit
+[root@ip-172-31-41-37 Syed]# git merge kiran_branch
+Updating 479e657..50583a1
+Fast-forward
+ hari | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hari
+[root@ip-172-31-41-37 Syed]# git log --oneline
+50583a1 (HEAD -> master, kiran_branch) adding into kiran branch
+479e657 (origin/master, origin/HEAD) git class
+f93d6eb adding ignore file
+69acb7c new files added in github
+3e17925 this mesg from Kiran
+ebeafdc this is my 2nd commit
+4837298 this is my 1st commit
+[root@ip-172-31-41-37 Syed]# git push origin master
+Username for 'https://github.com': nsirikonda
+Password for 'https://nsirikonda@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nsirikonda/Syed.git
+   479e657..50583a1  master -> master
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]# git stash
+No local changes to save
+[root@ip-172-31-41-37 Syed]# vim stash_file
+[root@ip-172-31-41-37 Syed]# vim ouer_file
+[root@ip-172-31-41-37 Syed]# git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ouer_file
+        stash_file
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git stash
+No local changes to save
+[root@ip-172-31-41-37 Syed]# git stash list
+[root@ip-172-31-41-37 Syed]# git stash apply stash@{1}
+error: stash@{1} is not a valid reference
+[root@ip-172-31-41-37 Syed]# git stash apply stash_file
+error: stash_file is not a valid reference
+[root@ip-172-31-41-37 Syed]# git stash apply
+No stash entries found.
+[root@ip-172-31-41-37 Syed]# git stash apply .
+error: . is not a valid reference
+[root@ip-172-31-41-37 Syed]# git stash list
+[root@ip-172-31-41-37 Syed]# git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ouer_file
+        stash_file
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git stash
+No local changes to save
+[root@ip-172-31-41-37 Syed]# git stash stash_file
+fatal: unknown subcommand: stash_file
+
+usage: git stash list [<options>]
+   or: git stash show [<options>] [<stash>]
+   or: git stash drop [-q|--quiet] [<stash>]
+   or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+   or: git stash branch <branchname> [<stash>]
+   or: git stash clear
+   or: git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [-m|--message <message>]
+          [--] [<pathspec>...]]
+   or: git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [<message>]
+
+[root@ip-172-31-41-37 Syed]# git stash show
+No stash entries found.
+[root@ip-172-31-41-37 Syed]# cat stash_file
+Password for 'https://nsirikonda@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nsirikonda/Syed.git
+   479e657..50583a1  master -> master
+
+[root@ip-172-31-41-37 Syed]# vi stash_file
+[root@ip-172-31-41-37 Syed]# git stash
+No local changes to save
+[root@ip-172-31-41-37 Syed]# git stash list
+[root@ip-172-31-41-37 Syed]# git stash save stash_file
+No local changes to save
+[root@ip-172-31-41-37 Syed]# git stash push stash_file .
+error: pathspec ':(,prefix:0)stash_file' did not match any file(s) known to git
+Did you forget to 'git add'?
+[root@ip-172-31-41-37 Syed]# git stash list
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]# git stash
+No local changes to save
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ouer_file
+        stash_file
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git add .
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ouer_file
+        new file:   stash_file
+
+[root@ip-172-31-41-37 Syed]# git commit -m "adding files to stash"
+[master 89ae05a] adding files to stash
+ 2 files changed, 19 insertions(+)
+ create mode 100644 ouer_file
+ create mode 100644 stash_file
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[root@ip-172-31-41-37 Syed]# cat stash_file
+Password for 'https://nsirikonda@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nsirikonda/Syed.git
+   479e657..50583a1  master -> master
+1234567890
+09876543322
+[root@ip-172-31-41-37 Syed]# vim stash_file
+[root@ip-172-31-41-37 Syed]# git stash
+Saved working directory and index state WIP on master: 89ae05a adding files to stash
+[root@ip-172-31-41-37 Syed]# vi ouer_file
+[root@ip-172-31-41-37 Syed]# vi ouer_file
+[root@ip-172-31-41-37 Syed]# git stash
+Saved working directory and index state WIP on master: 89ae05a adding files to stash
+[root@ip-172-31-41-37 Syed]# git stash list
+stash@{0}: WIP on master: 89ae05a adding files to stash
+stash@{1}: WIP on master: 89ae05a adding files to stash
+[root@ip-172-31-41-37 Syed]# git stash  clear
+[root@ip-172-31-41-37 Syed]# git stash
+No local changes to save
+[root@ip-172-31-41-37 Syed]# touch 1234
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1234
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git add .
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   1234
+
+[root@ip-172-31-41-37 Syed]# git reset 1234
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1234
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git add .
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   1234
+
+[root@ip-172-31-41-37 Syed]# git reset --hard 1234
+fatal: Cannot do hard reset with paths.
+[root@ip-172-31-41-37 Syed]# git reset --hard
+HEAD is now at 89ae05a adding files to stash
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[root@ip-172-31-41-37 Syed]# git stash
+No local changes to save
+[root@ip-172-31-41-37 Syed]# git stash list
+[root@ip-172-31-41-37 Syed]# git reset 1234
+fatal: ambiguous argument '1234': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]# touch 12 13 14 16
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        12
+        13
+        14
+        16
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git clean -n 13 16
+Would remove 13
+Would remove 16
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        12
+        13
+        14
+        16
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git clean -s 13 16
+error: unknown switch `s'
+usage: git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] <paths>...
+
+    -q, --quiet           do not print names of files removed
+    -n, --dry-run         dry run
+    -f, --force           force
+    -i, --interactive     interactive cleaning
+    -d                    remove whole directories
+    -e, --exclude <pattern>
+                          add <pattern> to ignore rules
+    -x                    remove ignored files, too
+    -X                    remove only ignored files
+
+[root@ip-172-31-41-37 Syed]# git clean -f 13 16
+Removing 13
+Removing 16
+[root@ip-172-31-41-37 Syed]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        12
+        14
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-41-37 Syed]# git tag
+[root@ip-172-31-41-37 Syed]# git log
+commit 89ae05a5ae0fff2ed8db44f590a7bf4d64ecbc51 (HEAD -> master)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Thu Dec 24 05:56:21 2020 +0000
+
+    adding files to stash
+
+commit 50583a18efe8be5ac61b59a35644dad95af043c5 (origin/master, origin/HEAD, kiran_branch)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Thu Dec 24 05:35:26 2020 +0000
+
+    adding into kiran branch
+
+commit 479e65764e48234689221a7a22f21ca35d0ab303
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:41:18 2020 +0000
+
+    git class
+
+commit f93d6eb664e1cefbaea878f745e24a90403c9025
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:33:53 2020 +0000
+
+    adding ignore file
+
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+[root@ip-172-31-41-37 Syed]# git log --oneline
+89ae05a (HEAD -> master) adding files to stash
+50583a1 (origin/master, origin/HEAD, kiran_branch) adding into kiran branch
+479e657 git class
+f93d6eb adding ignore file
+69acb7c new files added in github
+3e17925 this mesg from Kiran
+ebeafdc this is my 2nd commit
+4837298 this is my 1st commit
+[root@ip-172-31-41-37 Syed]# git tag -a important -m "important file" 69acb7c
+[root@ip-172-31-41-37 Syed]# git tag
+important
+[root@ip-172-31-41-37 Syed]# git show important
+tag important
+Tagger: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Thu Dec 24 06:17:50 2020 +0000
+
+important file
+
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c (tag: important)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+diff --git a/.gitingore b/.gitingore
+new file mode 100644
+index 0000000..2c64b6e
+--- /dev/null
++++ b/.gitingore
+@@ -0,0 +1 @@
++*.jp
+diff --git a/12.py b/12.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/13.css b/13.css
+new file mode 100644
+index 0000000..e69de29
+diff --git a/14.jp b/14.jp
+new file mode 100644
+index 0000000..e69de29
+diff --git a/15.java b/15.java
+new file mode 100644
+index 0000000..e69de29
+diff --git a/16.html b/16.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/24.jp b/24.jp
+new file mode 100644
+index 0000000..e69de29
+diff --git a/34.jp b/34.jp
+new file mode 100644
+index 0000000..e69de29
+[root@ip-172-31-41-37 Syed]# git show 69acb7c
+commit 69acb7c9001b0fbb9ec7425084437616a08a688c (tag: important)
+Author: nsirikonda <sirikonda.naveen@gmail.com>
+Date:   Wed Dec 23 06:30:55 2020 +0000
+
+    new files added in github
+
+diff --git a/.gitingore b/.gitingore
+new file mode 100644
+index 0000000..2c64b6e
+--- /dev/null
++++ b/.gitingore
+@@ -0,0 +1 @@
++*.jp
+diff --git a/12.py b/12.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/13.css b/13.css
+new file mode 100644
+index 0000000..e69de29
+diff --git a/14.jp b/14.jp
+new file mode 100644
+index 0000000..e69de29
+diff --git a/15.java b/15.java
+new file mode 100644
+index 0000000..e69de29
+diff --git a/16.html b/16.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/24.jp b/24.jp
+[root@ip-172-31-41-37 Syed]# git tag -d important
+Deleted tag 'important' (was 3dc286a)
+[root@ip-172-31-41-37 Syed]# git tag
+[root@ip-172-31-41-37 Syed]# history |more
+    1  yum update -y
+    2  yum install git -y
+    3  clear
+    4  yum install git -y
+    5  git config --global user.name "nsirikonda"
+    6  git config --global user.email "sirikonda.naveen@gmail.com"
+    7  git config --list
+    8  mkdir -p git_dir
+    9  ls -ld
+   10  cd git_dir/
+   11  git init
+   12  git remote add origin https://github.com/nsirikonda/Syed.git
+   13  git config --list
+   14  git clone https://github.com/nsirikonda/Syed.git
+   15  ls -l
+   16  cd Syed
+   17  ls -l
+   18  git log
+   19  git show 479e65764e48234689221a7a22f21ca35d0ab303
+   20  git branch
+   21  git log
+   22  git log --1
+   23  git log --oneline
+   24  git branch kiran_branch
+   25  git branch
+   26  git checkout kiran_branch
+   27  git branch
+   28  git log
+   29  git log --oneline
+   30  touch hari
+   31  git status
+   32  git add hari
+   33  git status
+   34  git commit -m "adding into kiran branch"
+   35  git status
+   36  git log
+   37  git checkout master
+   38  git branch
+   39  git log
+   40  git merge kiran_branch
+   41  git log --oneline
+   42  git push origin master
+   43  git stash
+   44  vim stash_file
+   45  vim ouer_file
+   46  git staus
+   47  git status
+   48  git stash
+   49  git stash list
+   50  git stash apply stash@{1}
+   51  git stash apply stash_file
+   52  git stash apply
+   53  git stash apply .
+   54  git stash list
+   55  git staus
+   56  git status
+   57  git stash
+   58  git stash stash_file
+   59  git stash show
+   60  cat stash_file
+   61  vi stash_file
+   62  git stash
+   63  git stash list
+   64  git stash save stash_file
+   65  git stash push stash_file .
+   66  git stash list
+   67  git stash
+   68  git status
+   69  git add .
+   70  git status
+   71  git commit -m "adding files to stash"
+   72  git status
+   73  cat stash_file
+   74  vim stash_file
+   75  git stash
+   76  vi ouer_file
+   77  git stash
+   78  git stash list
+   79  git stash  clear
+   80  git stash
+   81  touch 1234
+   82  git status
+   83  git add .
+   84  git status
+   85  git reset 1234
+   86  git status
+   87  git add .
+   88  git status
+   89  git reset --hard 1234
+   90  git reset --hard
+   91  git status
+   92  git stash
+   93  git stash list
+   94  git reset 1234
+   95  touch 12 13 14 16
+   96  git status
+   97  git clean -n 13 16
+   98  git status
+   99  git clean -s 13 16
+  100  git clean -f 13 16
+  101  git status
+  102  git tag
+  103  git log
+  104  git log --oneline
+  105  git tag -a important -m "important file" 69acb7c
+  106  git tag
+  107  git show important
+  108  git show 69acb7c
+  109  git tag -d important
+  110  git tag
+  111  history |more
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]# git branch
+  kiran_branch
+* master
+[root@ip-172-31-41-37 Syed]# git branch -d kiran_branch
+Deleted branch kiran_branch (was 50583a1).
+[root@ip-172-31-41-37 Syed]# git branch
+* master
+[root@ip-172-31-41-37 Syed]# git branch kiran_branch
+[root@ip-172-31-41-37 Syed]#
+[root@ip-172-31-41-37 Syed]# git checkout kiran_branch
+Switched to branch 'kiran_branch'
+[root@ip-172-31-41-37 Syed]#
