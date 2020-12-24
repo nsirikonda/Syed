@@ -1,0 +1,11 @@
+Password for 'https://nsirikonda@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nsirikonda/Syed.git
+   479e657..50583a1  master -> master
+1234567890
+09876543322
