@@ -12,5 +12,5 @@ resource "aws_instance" "test_box" {
 }
 }
 resource "aws_s3_bucket" "test_bucket" {
-	bucket = "123456789012345naveentestbucket123456789"
+	bucket = "bnasdfgheyekeunsdfhjlsfplo"
 	}
