@@ -1,7 +1,7 @@
 provider "aws" {
 	region = "us-east-2"
-	access_key = "AKIA6KHQQZS2PC5PDQWH"
-	secret_key = "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"
+	access_key = "AKIA6KHQQZS2OGCQKCVO"
+	secret_key = "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"
 }
 resource "aws_instance" "test_box" {
 	ami = "ami-0a0ad6b70e61be944"
@@ -12,5 +12,5 @@ resource "aws_instance" "test_box" {
 }
 }
 resource "aws_s3_bucket" "test_bucket" {
-	bucket = "bnasdfgheyekeunsdfhjlsfplo"
+	bucket = "bnasdfgheyekeuyfygrtdrfnsdfhjlsfplo"
 	}
